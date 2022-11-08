@@ -1,0 +1,7 @@
+brew "gcc"
+brew "unzip"
+brew "neovim"
+brew "zsh"
+brew "ripgrep"
+brew "fd"
+brew "go"

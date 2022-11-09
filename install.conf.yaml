@@ -6,6 +6,7 @@
     ~/.bash_logout: bash_logout
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
+    ~/.tmux.conf: tmux.conf
     ~/.config/: config/**
 - create:
     ~/dev
@@ -16,6 +17,6 @@
     - [chsh -s "$(which zsh)" "$USER", Set zsh as default shell]
     - [sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Install zsh]
     - [curl -sS https://starship.rs/install.sh | sh, Install starship]
-    - [git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions, Install zsh autosuggestions]
+    - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     - [git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim, Install Packer]
     - [go install golang.org/x/tools/gopls@latest, Install gopls]
